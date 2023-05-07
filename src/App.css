@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.page-css{
+  padding-top: 10%;
+  margin-top: 10%;
+  width:600px;
+  margin: 0 auto;
+}
+.no-link{
+  color: #747475;
+  text-decoration: none;
+}
+.todo-main{
+  width:600px;
+  margin: 0 auto;
+}

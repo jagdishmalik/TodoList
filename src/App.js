@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BasicExample from "./Components/NavBar"
+import * as React from 'react';
+import Page from './Components/Page1';
+import Help from './Components/Help1';
+import {Routes,Route} from 'react-router-dom';
+import Todo from './TodoComponents/Todo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BasicExample />
+      <div className="container page-css main-content">
+       <Todo/> 
+      </div>
+    </>
   );
 }
 
